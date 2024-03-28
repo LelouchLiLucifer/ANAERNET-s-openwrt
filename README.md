@@ -22,8 +22,8 @@
 3. 下载源代码，更新 feeds 并选择配置
 
    ```bash
-   git clone https://github.com/
-   cd lede
+   git clone https://github.com/LelouchLiLucifer/ANAERNET-s-openwrt.git
+   cd ANAERNET-s-openwrt
    ./scripts/feeds update -a
    ./scripts/feeds install -a
    make menuconfig
@@ -39,7 +39,7 @@
 5. 二次编译：
 
     ```bash
-    cd lede
+    cd ANAERNET-s-openwrt
     git pull
     ./scripts/feeds update -a
     ./scripts/feeds install -a
@@ -64,7 +64,7 @@ Target Images ---> (16) Kernel partition size (in MB)           #默认�
 Target Images ---> (160) Root filesystem partition size (in MB) #默认是 (160) 俺修改的值为 (4096)  
 ②源码内的argon主题不是很美观，建议使用以下的方法对argon主题进行替换
 ```
-cd lede/package/lean
+cd ANAERNET-s-openwrt/package/lean
 rm -rf luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
 rm -rf luci-app-argon-config
